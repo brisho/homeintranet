@@ -1,0 +1,6 @@
+services:
+  showalter.request_subscriber:
+    class: Drupal\showalter\EventSubscriber\ShowalterSubscriber
+    tags:
+      - { name: event_subscriber }
+
