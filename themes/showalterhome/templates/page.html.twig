@@ -1,0 +1,28 @@
+<div class="layout-container">
+
+  <header role="banner">
+    {% if logo %}
+      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+        <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+      </a>
+    {% endif %}
+
+    {{ page.header }}
+  </header>
+
+  {{ page.primary_menu }}
+  {{ page.secondary_menu }}
+
+  {{ page.highlighted }}
+
+  {{ page.help }}
+
+  <main role="main">
+    <div class="layout-content">
+      {{ page.highlighted }}
+
+      {{ page.content }}
+    </div>
+  </main>
+
+</div>

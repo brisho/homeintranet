@@ -1,0 +1,11 @@
+<?php
+
+
+function showalterhome_preprocess_page(&$variables) {
+  // Set logo to PNG file
+  $variables['logo'] = str_replace('.svg', '.png', $variables['logo']);
+
+  $current_path = \Drupal::request()->getRequestUri();
+  $variables['current_path'] = $current_path;
+}
+
